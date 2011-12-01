@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data.Services.Client;
 using Microsoft.WindowsAzure;
-using Microsoft.WindowsAzure.StorageClient.Protocol;
+//using Microsoft.WindowsAzure.StorageClient.Protocol;
 using System.Net;
 using Common.Logging;
 using NDesk.Options;
@@ -83,7 +83,7 @@ namespace wastll
             {
                 var extra = p.Parse(args);
 
-                if (showHelp)
+                if (account == null || showHelp)
                 {
                     ShowHelp(p);
                 }
